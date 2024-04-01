@@ -26,15 +26,9 @@ export class SearchPointsOfInterestController extends Controller<SearchPointOfIn
   }
 
   async handle(req: SearchPointOfInterestControllerRequest) {
-    const parsedReq = searchPointsSchema.safeParse(req)
+    const parsedReq = this.validate(searchPointsSchema, req)
 
-    if (!parsedReq.success) {
-      return this.badRequest(
-        new Error(parsedReq.error.flatten().fieldErrors.query?.join(' & ')),
-      )
-    }
-
-    const { maxDistance, refX, refY } = parsedReq.data.query
+    const { maxDistance, refX, refY } = parsedReq.query
 
     if (!maxDistance || !refX || !refY) {
       const response = await this.fetchPointsOfInterestUseCase.execute()
