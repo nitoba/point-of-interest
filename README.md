@@ -34,8 +34,6 @@ The application follows the following design patterns:
 
 4. **Automated Testing**: Unit, integration and end-2-end tests are written to ensure code quality.
 
-5. **Asynchronous Communication**: Asynchronous communication within a system brings the possibility of making parts communicate through messages, without waiting for an immediate response.
-
 ## 🎯 Main Features
 
 - [x] Search registered points of interest
@@ -64,6 +62,7 @@ To run this application, you need to have [BunJs](https://bun.sh/) installed on 
 ## 🧑‍💻 Possible improvements
 - Use another database to store the data like a Postgres
 - Add pipes for request data validation
+- Add dependency injection system to auto create the objects and inject them in the controllers
 
 ## 📄 License
 
