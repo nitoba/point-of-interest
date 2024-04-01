@@ -1,0 +1,2 @@
+GET http://localhost:3333/points?refX=20&refY=10&maxDistance=10
+Content-Type: application/json
