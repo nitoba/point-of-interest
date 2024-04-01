@@ -1,8 +1,13 @@
 <div align='center'>
-	<h1>📊 Point of Interest</h1>
+	<h1>📍 Point of Interest</h1>
 	<img src='https://img.shields.io/github/languages/top/nitoba/picpay-challenge' alt='Linguagem mais utilizada' />
 	<img src='https://img.shields.io/github/last-commit/nitoba/picpay-challenge' alt='Último commit' />
 </div>
+
+<div align='center'>
+	<img src='.github/preview.jpg' style="width: 400px; height:auto;" alt='Preview' />
+</div>
+
 
 ## 🚀 Introduction
 Solution for the challenge at backend called point of interest.
